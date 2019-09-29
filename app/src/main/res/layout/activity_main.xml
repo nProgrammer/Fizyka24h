@@ -34,21 +34,23 @@
             android:padding="10dip">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/theoryBT"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/button_design"
+                android:onClick="theoryBTClick"
                 android:text="Teoria"
                 android:textColor="@color/generalFont"
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/exBT"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dip"
                 android:layout_weight="1"
                 android:background="@drawable/button_design"
+                android:onClick="exBTClick"
                 android:text="Zadania"
                 android:textColor="@color/generalFont"
                 android:textStyle="bold" />
@@ -56,10 +58,11 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/scoreBT"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/button_design"
+            android:onClick="scoreBTClick"
             android:text="Wyniki"
             android:textColor="@color/generalFont"
             android:textStyle="bold" />
