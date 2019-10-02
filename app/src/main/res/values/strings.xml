@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Fizyka24h</string>
+    <string name="forcetranslate">F - siła ciężkości, m - masa, g - grawitacja na obiekcie (na ziemi 9,81 N/kg)</string>
 </resources>
