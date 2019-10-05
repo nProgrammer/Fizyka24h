@@ -1,5 +1,6 @@
 package pl.norbertwagner.nprogrammer.fizyka24h
 
+import android.content.ContentValues
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -14,16 +15,23 @@ class ForceExActivity : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_force_ex)
-
         checkBT.setOnClickListener{
             if(ex1A.isChecked){
                 score++
-                Log.d("Answers", score.toString())
             }
             if(ex2C.isChecked){
                 score++
-                Log.d("Answers", score.toString())
             }
+            score = score * 100 / 2
+            var finalScore = "$score%"
+
+            val dbHelper = DataBaseHelper(applicationContext)
+            val db = dbHelper.writableDatabase
+            val value = ContentValues()
+            value.put("unit", "1")
+            value.put("score", finalScore)
+            db.insertOrThrow(TableInfo.TABLE_NAME, null, value)
+
             Toast.makeText(applicationContext, "Wynik został zapisany... Prznoszenie do strony głównej", Toast.LENGTH_SHORT).show()
             startActivity(Intent(applicationContext, MainActivity::class.java))
         }
