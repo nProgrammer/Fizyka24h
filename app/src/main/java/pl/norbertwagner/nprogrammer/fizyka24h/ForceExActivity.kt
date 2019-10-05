@@ -12,6 +12,7 @@ class ForceExActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         var score = 0
+        val unit = "Roździał 1"
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_force_ex)
@@ -28,7 +29,7 @@ class ForceExActivity : AppCompatActivity() {
             val dbHelper = DataBaseHelper(applicationContext)
             val db = dbHelper.writableDatabase
             val value = ContentValues()
-            value.put("unit", "1")
+            value.put("unit", unit)
             value.put("score", finalScore)
             db.insertOrThrow(TableInfo.TABLE_NAME, null, value)
 

@@ -18,6 +18,6 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(applicationContext, ExActivity::class.java))
     }
     fun scoreBTClick(v: View){
-
+        startActivity(Intent(applicationContext, ScoreActivity::class.java))
     }
 }
