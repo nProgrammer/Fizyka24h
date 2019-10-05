@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 
 class TableOfContentActivity : AppCompatActivity() {
 
@@ -17,6 +18,6 @@ class TableOfContentActivity : AppCompatActivity() {
     }
 
     fun pascalClick(v: View){
-        TODO("Add this function to onClick to button goBTPascal")
+        Toast.makeText(applicationContext, "Wkrótce dostępne", Toast.LENGTH_SHORT).show()
     }
 }
