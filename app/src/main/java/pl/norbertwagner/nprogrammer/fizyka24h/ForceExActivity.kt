@@ -12,7 +12,7 @@ class ForceExActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         var score = 0
-        val unit = "Roździał 1"
+        val unit = "Siła ciężkości"
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_force_ex)

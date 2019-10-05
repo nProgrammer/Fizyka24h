@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dip"
-            android:text="Oblicz siłę ciężkości pojazdu o masie 1230 kg, kiedy grawitacja wynosi 10 N/kg"
+            android:text="Oblicz siłę ciężkości pojazdu o masie 1230 kg, kiedy grawitacja wynosi 10 N/kg. Ile wynosi ta siła?"
             android:textColor="@color/generalFont"
             android:textStyle="bold" />
 
@@ -36,8 +36,8 @@
             android:id="@+id/ex1Answers"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dip"
-            android:layout_marginRight="10dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
             android:background="@drawable/button_design"
             android:orientation="horizontal">
 
@@ -91,7 +91,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dip"
-            android:text="Oblicz masę Statku kosmicznego o sile ciężkośći 3000 N, kiedy grawitacja wynosi 10 N/kg"
+            android:text="Oblicz masę Statku kosmicznego o sile ciężkośći 3000 N, kiedy grawitacja wynosi 10 N/kg. Ile wynosi masa tego obiektu?"
             android:textColor="@color/generalFont"
             android:textStyle="bold" />
 
@@ -99,8 +99,8 @@
             android:id="@+id/ex2Answers"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dip"
-            android:layout_marginRight="10dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
             android:background="@drawable/button_design"
             android:orientation="horizontal">
 

@@ -18,6 +18,7 @@ object BasicCommands{
                 "${TableInfo.TABLE_COLUMN_UNIT} TEXT NOT NULL," +
                 "${TableInfo.TABLE_COLUMN_SCORE} TEXT NOT NULL)"
     const val SQL_DELETE_TABLE = "DROP TABLE IF EXISTS ${TableInfo.TABLE_NAME}"
+    const val SQL_DELETE_TABLE_DATA = "DROP TABLE ${TableInfo.TABLE_NAME}"
 }
 
 class DataBaseHelper(context: Context): SQLiteOpenHelper(context, TableInfo.TABLE_NAME, null, 1){
@@ -27,6 +28,10 @@ class DataBaseHelper(context: Context): SQLiteOpenHelper(context, TableInfo.TABL
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
         db?.execSQL(BasicCommands.SQL_DELETE_TABLE)
+        onCreate(db)
+    }
+    fun clearDataBase(db: SQLiteDatabase?){
+        db?.execSQL(BasicCommands.SQL_DELETE_TABLE_DATA)
         onCreate(db)
     }
 }
