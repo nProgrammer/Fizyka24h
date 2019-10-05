@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#170061</color>
     <color name="colorAccent">#D81B60</color>
     <color name="generalFont">#B9FFFFFF</color>
+    <color name="exampleTextFont">#7CFFFFFF</color>
     <color name="additionalFont">#B9FF0000</color>
     <color name="buttonBackgroundColor">#40FFFFFF</color>
     <color name="buttonBackgroundColorClick">#40FF3C3C</color>

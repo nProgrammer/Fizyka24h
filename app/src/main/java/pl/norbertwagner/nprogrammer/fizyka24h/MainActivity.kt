@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(applicationContext, TableOfContentActivity::class.java))
     }
     fun exBTClick(v: View){
-
+        startActivity(Intent(applicationContext, ExActivity::class.java))
     }
     fun scoreBTClick(v: View){
 

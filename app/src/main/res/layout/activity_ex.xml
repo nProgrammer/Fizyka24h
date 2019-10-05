@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
-    tools:context=".TableOfContentActivity">
+    tools:context=".ExActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -37,7 +37,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@drawable/button_design"
-                    android:onClick="gravityForceClick"
+                    android:onClick="gravityForceExClick"
                     android:text="Przejdź"
                     android:textColor="@color/generalFont" />
             </LinearLayout>

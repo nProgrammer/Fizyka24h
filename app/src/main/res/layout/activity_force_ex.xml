@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".ForceExActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dip"
+            android:paddingTop="20dip"
+            android:text="Zad 1."
+            android:textColor="@color/additionalFont"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:text="Oblicz siłę ciężkości pojazdu o masie 1230 kg, kiedy grawitacja wynosi 10 N/kg"
+            android:textColor="@color/generalFont"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/ex1Answers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/button_design"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/ex1A"
+                android:layout_width="129dp"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="F = 12300 N"
+                android:textColor="@color/generalFont"
+                android:textColorHint="@color/generalFont" />
+
+            <RadioButton
+                android:id="@+id/ex1B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="F = 1230 N"
+                android:textColor="@color/generalFont"
+                android:textColorHint="@color/generalFont" />
+
+            <RadioButton
+                android:id="@+id/ex1C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="F = 12300 kg"
+                android:textColor="@color/generalFont"
+                android:textColorHint="@color/generalFont" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dip"
+            android:paddingTop="20dip"
+            android:text="Zad 2."
+            android:textColor="@color/additionalFont"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:text="Oblicz masę Statku kosmicznego o sile ciężkośći 3000 N, kiedy grawitacja wynosi 10 N/kg"
+            android:textColor="@color/generalFont"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/ex2Answers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/button_design"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/ex2A"
+                android:layout_width="129dp"
+                android:layout_height="wrap_content"
+                android:text="m = 30000 kg"
+                android:textColor="@color/generalFont"
+                android:textColorHint="@color/generalFont" />
+
+            <RadioButton
+                android:id="@+id/ex2B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="F  = 300 kg"
+                android:textColor="@color/generalFont"
+                android:textColorHint="@color/generalFont" />
+
+            <RadioButton
+                android:id="@+id/ex2C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="m = 300 kg"
+                android:textColor="@color/generalFont"
+                android:textColorHint="@color/generalFont" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/checkBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="50dip"
+        android:layout_marginRight="10dip"
+        android:layout_weight="0"
+        android:background="@drawable/button_design"
+        android:text="Sprawdź" />
+
+</LinearLayout>

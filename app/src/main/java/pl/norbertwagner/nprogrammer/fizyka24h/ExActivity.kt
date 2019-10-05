@@ -5,18 +5,17 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 
-class TableOfContentActivity : AppCompatActivity() {
+class ExActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_table_of_content)
+        setContentView(R.layout.activity_ex)
+    }
+    fun gravityForceExClick(v: View){
+        startActivity(Intent(applicationContext, ForceExActivity::class.java))
     }
 
-    fun gravityForceClick(v: View){
-        startActivity(Intent(applicationContext, ForceActivity::class.java))
-    }
-
-    fun pascalClick(v: View){
+    fun pascalExClick(v: View){
         TODO("Add this function to onClick to button goBTPascal")
     }
 }
