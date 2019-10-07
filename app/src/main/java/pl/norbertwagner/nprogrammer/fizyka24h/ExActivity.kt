@@ -16,7 +16,7 @@ class ExActivity : AppCompatActivity() {
         startActivity(Intent(applicationContext, ForceExActivity::class.java))
     }
 
-    fun pascalExClick(v: View){
+    fun pressureExClick(v: View){
         Toast.makeText(applicationContext, "Wkrótce dostępne", Toast.LENGTH_SHORT).show()
     }
 }

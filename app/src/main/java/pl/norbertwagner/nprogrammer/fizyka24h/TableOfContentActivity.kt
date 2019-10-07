@@ -17,7 +17,7 @@ class TableOfContentActivity : AppCompatActivity() {
         startActivity(Intent(applicationContext, ForceActivity::class.java))
     }
 
-    fun pascalClick(v: View){
-        Toast.makeText(applicationContext, "Wkrótce dostępne", Toast.LENGTH_SHORT).show()
+    fun pressureClick(v: View){
+        startActivity(Intent(applicationContext, PressureActivity::class.java))
     }
 }
