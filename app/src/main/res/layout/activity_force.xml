@@ -18,7 +18,7 @@
             android:layout_width="258dp"
             android:layout_height="match_parent"
             android:padding="10dip"
-            android:text="Siła ciężkości - siłą z jaką ciało jest przyciągane. Jednostką siły jest Niuton (N)."
+            android:text="@string/forcetext"
             android:textColor="@color/generalFont"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="20dip"
-        android:text="F = m * g"
+        android:text="@string/forceFormula"
         android:textColor="@color/additionalFont"
         android:textSize="18sp"
         android:textStyle="bold" />
@@ -63,7 +63,7 @@
         android:padding="10dip"
         android:paddingLeft="20dip"
         android:paddingRight="20dip"
-        android:text="ZADANIE PRZYKŁADOWE"
+        android:text="@string/example"
         android:textColor="@color/exampleTextFont"
         android:textSize="18sp"
         android:textStyle="bold" />
@@ -75,7 +75,7 @@
         android:gravity="center"
         android:paddingLeft="20dip"
         android:paddingRight="20dip"
-        android:text="Oblicz siłę ciężkości samochodu jeżeli jego masa ma 2t, kiedy grawitacja w zaokrągleniu wynosi 10 N/kg"
+        android:text="@string/forceExampleEx"
         android:textColor="@color/generalFont"
         android:textSize="18sp"
         android:textStyle="bold" />

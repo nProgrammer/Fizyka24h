@@ -5,6 +5,8 @@ import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import android.provider.BaseColumns
 
+// DataBase Saving/Creating/Deleting
+
 object TableInfo: BaseColumns{
     const val TABLE_NAME = "Answers"
     const val TABLE_COLUMN_UNIT = "unit"

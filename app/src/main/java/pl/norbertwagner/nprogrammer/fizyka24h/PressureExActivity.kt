@@ -27,7 +27,7 @@ class PressureExActivity : AppCompatActivity() {
                 score++
             }
             score = score * 100 / 3
-            var finalScore = "$score%"
+            val finalScore = "$score%"
 
             val dbHelper = DataBaseHelper(applicationContext)
             val db = dbHelper.writableDatabase

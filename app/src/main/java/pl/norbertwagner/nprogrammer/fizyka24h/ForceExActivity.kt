@@ -10,8 +10,8 @@ import kotlinx.android.synthetic.main.activity_force_ex.*
 class ForceExActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        var score = 0
-        val unit = "Siła ciężkości"
+        var score = 0 // score - var that have info about score
+        val unit = "Siła ciężkości" // unit - value that have info about subject name
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_force_ex)
@@ -24,7 +24,7 @@ class ForceExActivity : AppCompatActivity() {
                 score++
             }
             score = score * 100 / 2
-            var finalScore = "$score%"
+            val finalScore = "$score%"
 
             val dbHelper = DataBaseHelper(applicationContext)
             val db = dbHelper.writableDatabase

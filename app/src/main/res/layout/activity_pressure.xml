@@ -18,7 +18,7 @@
             android:layout_width="258dp"
             android:layout_height="match_parent"
             android:padding="10dip"
-            android:text="Ciśnienie - wielkość skalarna określona jako wartość siły działającej prostopadle do powierzchni podzielona przez powierzchnię na jaką ona działa. Jednostką ciśnienia jest Pa (Paskal)"
+            android:text="@string/pressuretext"
             android:textColor="@color/generalFont"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="20dip"
-        android:text="P = F / s"
+        android:text="@string/pressureFormula"
         android:textColor="@color/additionalFont"
         android:textSize="18sp"
         android:textStyle="bold" />
@@ -63,7 +63,7 @@
         android:padding="10dip"
         android:paddingLeft="20dip"
         android:paddingRight="20dip"
-        android:text="ZADANIE PRZYKŁADOWE"
+        android:text="@string/example"
         android:textColor="@color/exampleTextFont"
         android:textSize="18sp"
         android:textStyle="bold" />
@@ -75,7 +75,7 @@
         android:gravity="center"
         android:paddingLeft="20dip"
         android:paddingRight="20dip"
-        android:text="Oblicz ciśnienie jakie wytwarza chłopczyk o masie 44kg, a jego nogi mają powierzchnię 10m^2."
+        android:text="@string/pressureExampleEx"
         android:textColor="@color/generalFont"
         android:textSize="18sp"
         android:textStyle="bold" />
@@ -120,7 +120,7 @@
         android:layout_height="wrap_content"
         android:paddingLeft="20dip"
         android:paddingRight="20dip"
-        android:text="p = 440 N / 10 m^2 = 44 Pa"
+        android:text="p = 440 N / 0,5 m^2 = 880 Pa"
         android:textColor="@color/additionalFont"
         android:textSize="18sp"
         android:textStyle="bold" />

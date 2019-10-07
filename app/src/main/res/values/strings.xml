@@ -1,5 +1,27 @@
 <resources>
     <string name="app_name">Fizyka24h</string>
+
+    <!-- UNITS/SUBJECTS -->
+    <string name="unit1">Siła ciężkości</string>
+    <string name="unit2">Ciśnienie</string>
+
+    <!-- Normal texts -->
+    <string name="forcetext">Siła ciężkości - siłą z jaką ciało jest przyciągane. Jednostką siły jest Niuton (N).</string>
+    <string name="pressuretext">Ciśnienie - wielkość skalarna określona jako wartość siły działającej prostopadle do powierzchni podzielona przez powierzchnię na jaką ona działa. Jednostką ciśnienia jest Pa (Paskal)</string>
+
+    <!-- BUTTONS ETC.-->
+    <string name="go">Przejdź</string>
+    <string name="example">ZADANIE PRZYKŁADOWE</string>
+
+    <!-- Formula -->
+    <string name="forceFormula">F = m * g</string>
+    <string name="pressureFormula">p = F / s</string>
+
+    <!-- Ex content -->
+    <string name="forceExampleEx">Oblicz siłę ciężkości samochodu jeżeli jego masa ma 2t, kiedy grawitacja w zaokrągleniu wynosi 10 N/kg</string>
+    <string name="pressureExampleEx">Oblicz ciśnienie jakie wytwarza chłopczyk o masie 44kg, a jego sanki mają powierzchnię 0,5 m^2.</string>
+
+    <!-- translations of formula -->
     <string name="forcetranslate">F - siła ciężkości, m - masa, g - grawitacja na obiekcie (na ziemi 9,81 N/kg)</string>
     <string name="pressuretranslate">p - ciśnienie, F - siła nacisku (np.: F ciężkości), s - powierzchnia</string>
 </resources>
