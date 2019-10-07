@@ -75,7 +75,7 @@
         android:gravity="center"
         android:paddingLeft="20dip"
         android:paddingRight="20dip"
-        android:text="Oblicz ciśnienie jakie wytwarza chłopczyk o masie 44kg, a jego nogi mają powierchnię 10m^2."
+        android:text="Oblicz ciśnienie jakie wytwarza chłopczyk o masie 44kg, a jego nogi mają powierzchnię 10m^2."
         android:textColor="@color/generalFont"
         android:textSize="18sp"
         android:textStyle="bold" />

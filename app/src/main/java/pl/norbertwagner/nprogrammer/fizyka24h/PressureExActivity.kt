@@ -2,28 +2,31 @@ package pl.norbertwagner.nprogrammer.fizyka24h
 
 import android.content.ContentValues
 import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_force_ex.*
+import kotlinx.android.synthetic.main.activity_pressure_ex.*
 
-class ForceExActivity : AppCompatActivity() {
+class PressureExActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         var score = 0
-        val unit = "Siła ciężkości"
+        val unit = "Ciśnienie"
 
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_force_ex)
+        setContentView(R.layout.activity_pressure_ex)
 
-        checkBTForce.setOnClickListener{
-            if(ex1AForce.isChecked){
+        checkBTPressure.setOnClickListener{
+            if(ex1BPressure.isChecked){
                 score++
             }
-            if(ex2CForce.isChecked){
+            if(ex2BPressure.isChecked){
                 score++
             }
-            score = score * 100 / 2
+            if(ex2CPressure.isChecked){
+                score++
+            }
+            score = score * 100 / 3
             var finalScore = "$score%"
 
             val dbHelper = DataBaseHelper(applicationContext)
@@ -32,7 +35,6 @@ class ForceExActivity : AppCompatActivity() {
             value.put("unit", unit)
             value.put("score", finalScore)
             db.insertOrThrow(TableInfo.TABLE_NAME, null, value)
-
             Toast.makeText(applicationContext, "Wynik został zapisany... Prznoszenie do strony głównej", Toast.LENGTH_SHORT).show()
             startActivity(Intent(applicationContext, MainActivity::class.java))
         }

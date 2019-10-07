@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
     android:orientation="vertical"
-    tools:context=".ForceExActivity">
+    tools:context=".PressureExActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,12 +28,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dip"
-            android:text="Oblicz siłę ciężkości pojazdu o masie 1230 kg, kiedy grawitacja wynosi 10 N/kg. Ile wynosi ta siła?"
+            android:text="Ile wynosi ciśnienie wytwarzane przez człowieka który stoi na skale, kiedy masa człowieka wynosi 55,5 kg, a powierzchnia wynosi 2 m^2?"
             android:textColor="@color/generalFont"
             android:textStyle="bold" />
 
         <RadioGroup
-            android:id="@+id/ex1AnswersForce"
+            android:id="@+id/ex1AnswersPressure"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dip"
@@ -42,29 +42,29 @@
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/ex1AForce"
+                android:id="@+id/ex1APressure"
                 android:layout_width="129dp"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:text="F = 12300 N"
+                android:text="p = 277,5 N"
                 android:textColor="@color/generalFont"
                 android:textColorHint="@color/generalFont" />
 
             <RadioButton
-                android:id="@+id/ex1BForce"
+                android:id="@+id/ex1BPressure"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="F = 1230 N"
+                android:text="p = 277,5 Pa"
                 android:textColor="@color/generalFont"
                 android:textColorHint="@color/generalFont" />
 
             <RadioButton
-                android:id="@+id/ex1CForce"
+                android:id="@+id/ex1CPressure"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="F = 12300 kg"
+                android:text="p = 327,5 N"
                 android:textColor="@color/generalFont"
                 android:textColorHint="@color/generalFont" />
 
@@ -91,12 +91,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dip"
-            android:text="Oblicz masę Statku kosmicznego o sile ciężkośći 3000 N, kiedy grawitacja wynosi 10 N/kg. Ile wynosi masa tego obiektu?"
+            android:text="Ile wynosi F nasicku na krę lodu o s = 1000 m^2, a p = 1 MPa"
             android:textColor="@color/generalFont"
             android:textStyle="bold" />
 
         <RadioGroup
-            android:id="@+id/ex2AnswersForce"
+            android:id="@+id/ex2AnswersPressure"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dip"
@@ -105,36 +105,103 @@
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/ex2AForce"
+                android:id="@+id/ex2APressure"
                 android:layout_width="129dp"
                 android:layout_height="wrap_content"
-                android:text="m = 30000 kg"
+                android:text="p = 1 GN"
                 android:textColor="@color/generalFont"
-                android:textColorHint="@color/generalFont" />
+                android:textColorHint="@color/generalFont"
+                android:textSize="14sp" />
 
             <RadioButton
-                android:id="@+id/ex2BForce"
+                android:id="@+id/ex2BPressure"
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="F  = 1 GN"
+                android:textColor="@color/generalFont"
+                android:textColorHint="@color/generalFont"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/ex2CPressure"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="F  = 300 kg"
+                android:text="F = 10 GN"
                 android:textColor="@color/generalFont"
-                android:textColorHint="@color/generalFont" />
-
-            <RadioButton
-                android:id="@+id/ex2CForce"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="m = 300 kg"
-                android:textColor="@color/generalFont"
-                android:textColorHint="@color/generalFont" />
+                android:textColorHint="@color/generalFont"
+                android:textSize="14sp" />
 
         </RadioGroup>
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView234"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dip"
+            android:paddingTop="20dip"
+            android:text="Zad 3."
+            android:textColor="@color/additionalFont"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView232"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:text="Ile wynosi powierzchnia kry lodu na którą naciska F = 1000 N, a ciśnienie wynosi 100 Pa"
+            android:textColor="@color/generalFont"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/ex3AnswersPressure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/button_design"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/ex3APressure"
+                android:layout_width="129dp"
+                android:layout_height="wrap_content"
+                android:text="s = 0,1 m^2"
+                android:textColor="@color/generalFont"
+                android:textColorHint="@color/generalFont"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/ex3BPressure"
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="s  = 1 m^2"
+                android:textColor="@color/generalFont"
+                android:textColorHint="@color/generalFont"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/ex3CPressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="s = 10 m^2"
+                android:textColor="@color/generalFont"
+                android:textColorHint="@color/generalFont"
+                android:textSize="14sp" />
+
+        </RadioGroup>
+    </LinearLayout>
     <Button
-        android:id="@+id/checkBTForce"
+        android:id="@+id/checkBTPressure"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
