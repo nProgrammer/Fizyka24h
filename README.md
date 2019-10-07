@@ -9,6 +9,6 @@ Aplikacja ta na razie jest to BETA
 
 Aplikacja będzie wciąż aktualizowana i będzie dostępna na Google Play Store
 
-#SPIS TREŚCI TEMATÓW ZNAJDUJĄCYCH SIĘ W APLIKACJI:
+# SPIS TREŚCI TEMATÓW ZNAJDUJĄCYCH SIĘ W APLIKACJI:
 	~ Siła ciężkości,
 	~ Ciśnienie
